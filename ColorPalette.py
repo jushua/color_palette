@@ -47,7 +47,7 @@ def get_palette(image_path, n_colors):
 
     return palette_with_percentages
 
-@st.cache_data
+
 def load_image_from_link(image_url):
     response = requests.get(image_url)
     image = Image.open(BytesIO(response.content))
